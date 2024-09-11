@@ -4,4 +4,4 @@ pandas>=1.5
 matplotlib>=3.5
 requests>=2.28
 opencv-python>=4.5  # Si vas a manejar imágenes o cámaras
-your-custom-library  # Incluye tu librería personalizada si la tienes en PyPI
+streamlit_option_menu >= 0.3  # Si vas a usar el widget de selectores

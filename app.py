@@ -1,12 +1,15 @@
 import streamlit as st
-from app.components.sidebar import load_sidebar
-from app.pages.home import show_home
 
-# Configuración básica de la aplicación
-st.set_page_config(page_title="Microscopio Robótico", layout="wide")
+# Importa las funciones de las páginas
+from app.pages import home, Microscopio
+from app.components import sidebar
 
-# Cargar la barra lateral
-load_sidebar()
+st.set_page_config(
+    page_title="Microscopio Robótico",
+    page_icon="🔬",
+    layout="wide"
+)
 
-# Cargar la página principal
-show_home()
+sidebar.load_sidebar()
+
+
